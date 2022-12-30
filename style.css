@@ -73,6 +73,10 @@ body {
 .text__error__oculto {
     display: none;
 }
+
+.color__placeholder__error::placeholder {
+    color: hsl(354, 100%, 66%);
+}
 /*------------Fin Error------------*/
 
 .submit {
@@ -157,9 +161,14 @@ body {
     }
 }
 
-@media only screen and (min-width:000px) {
+@media only screen and (min-width:800px) {
     .container__main, .container__footer {
         max-width: 500px;
+    }
+
+    .container__footer {
+        position: relative;
+        margin-top: 70px;
     }
 }
 
@@ -172,8 +181,18 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
-        align-items: flex-end;
+        align-items: flex-start;
         gap: 20px;
+    }
+
+    .text__error {
+        text-align: start;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .submit {
+        margin-top: 0;
     }
 
     .container__input__text__error {
