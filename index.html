@@ -18,14 +18,17 @@
         <h1 class="title">We are launching <span class="title__bold">soon!</span></h1>
         <p class="paragraph">Subscribe and get notified</p>
         <form action="#" class="form">
-            <input type="email"id="email" name="email" class="input__email" placeholder="Your email address">
+            <div class="container__input__text__error">
+                <input type="email"id="email" name="email" class="input__email" placeholder="Your email address">
+                <label for="error" class="text__error text__error__oculto">Please provide a valid email address</label>
+            </div>
             <input type="submit" value="Notify Me" class="submit">
         </form>
         <img src="images/illustration-dashboard.png" alt="imagen" class="img__principal">
     </main>
     <footer class="container__footer">
         <ul class="list__items__social">
-            <li class="item__social"><i class="fa-brands fa-facebook-f"></i></li>
+            <li class="item__social item__social__facebook"><i class="fa-brands fa-facebook-f"></i></li>
             <li class="item__social"><i class="fa-brands fa-twitter"></i></li>
             <li class="item__social"><i class="fa-brands fa-instagram"></i></li>
         </ul>
